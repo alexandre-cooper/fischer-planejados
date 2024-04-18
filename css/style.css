@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
     border: 0;
-    outline: 0
+    outline: 0;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 h1,
 .h1,
 h2,
@@ -18,6 +18,9 @@ h6 {
     line-height: 1.5
 }
 
+h1{
+    font-family: "Urbanist", sans-serif;
+}
 
 body {
     font-family: "Roboto", sans-serif;
@@ -217,7 +220,7 @@ section {
     margin-top: 8px;
     margin-right: 15px;
     margin-bottom: 8px;
-    background-color: transparent;
+    background-color: #ffef5c56;
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px
@@ -582,6 +585,343 @@ button:focus {
         width: auto
     }
 }
+@media (min-width: 401px) and (max-width:767px){
+    .hero-area .carousel-inner .carousel-caption h2 {
+        font-size: 55px
+    }
+
+    .hero-area .carousel-inner .carousel-caption h3 {
+        font-size: 36px
+    }
+    .area-portfolio{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        justify-content: center;
+    }
+    .card-moveis{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        background-image: url('/img//interior.jpg');
+        padding: 10px;
+        border-top-left-radius: 90px;
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-ambiente h1, h3, p{
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+    }
+    .card-moveis, h1, h3, p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    
+    .card-ambiente{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/img/corporativo.jpg');
+        padding: 30px;
+        border-bottom-right-radius: 90px;
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-portfolio img{
+        width: 400px;
+    }
+    
+    .texto-fora {
+        background-color: #222;
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        text-align: center;
+        transition: bottom 0.5s ease-in-out; 
+        border-radius: 10px;
+    }
+    .card-ambiente:hover .texto-fora {
+        bottom: -10%;
+    }
+    .card-moveis:hover .texto-fora {
+        bottom: -10%;
+    }
+    .area-conheca{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+    .area-conheca h1{
+        width: 400px;
+        font-size: 25px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffee5c;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .titulo-fino{
+        font-weight: 300;
+    }
+    .area-conheca h4{
+        font-weight: 300;
+        text-align: center;
+        margin: 10px;
+        width: 400px;
+    }
+    .for-all{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .for-all h1{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .for-all div img {
+        width: 80px;
+    }
+    
+    .area-for-all {
+        display: grid;
+        grid-template-columns: 400px 2fr;
+        align-items: center;
+    }
+    .area-for-all div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        width: 250px;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1);
+    }
+    .area-for-all div h3,p{
+        text-align: center;
+    }
+    .about div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .about div p{
+        text-align: justify;
+        width: 400px;
+    }
+    .about div h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .card-portfolio {
+        display: grid;
+        grid-template-columns: 300px 1fr;
+    }
+    .card-portfolio li img{
+        width: 300px;
+        height: 300px;
+        padding: 10px;
+        transition: transform 0.9s ease-in-out;
+        overflow: hidden;
+    }
+    .card-portfolio li img:hover{
+        transform: scale(1.05);
+    }
+    .portfolio div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio div h1{
+        font-size: 25px;
+        text-align: center;
+        width: 500px;
+    }
+    #contact{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-all{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* define o tamanho das colunas */
+        grid-gap: 10px; /* espaçamento entre os itens */
+        padding: 20px;
+        transition: all 0.6s ;
+    }
+    .card-all h3{
+        color: #ffee5c;
+    }
+    .card-all:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.4);
+    }
+        .area-conheca{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .area-conheca .titulo{
+            margin-top: 25px;
+            width: 500px;
+        }
+        .area-conheca h1{
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .titulo-fino{
+            font-weight: 300;
+        }
+        .area-conheca h4{
+            font-weight: 300;
+            text-align: center;
+            margin: 10px;
+            width: 500px;
+        }
+        .area-portfolio{
+            display: flex;
+            align-items: center;
+            margin: 30px;
+            justify-content: center;
+        }
+        .card-moveis{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/img//interior.jpg');
+            padding: 10px;
+            border-top-left-radius: 90px;
+            width: 350px;
+            height: 350px;
+            margin: 2px;
+            background-size: cover;
+        }
+        .card-ambiente h1, h3, p{
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 3px;
+        }
+        .card-moveis, h1, h3, p {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .card-ambiente{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('/img/corporativo.jpg');
+            padding: 10px;
+            border-bottom-right-radius: 90px;
+            width: 350px;
+            height: 350px;
+            margin: 10px;
+            background-size: cover;
+        }
+
+        .texto-fora {
+            display: none;
+            background-color: #222;
+            position: absolute;
+            bottom: 0;
+            width: 300px;
+            text-align: center;
+            transition: bottom 0.5s ease-in-out; 
+            border-radius: 10px;
+        }
+        .card-ambiente:hover .texto-fora {
+            bottom: -10%;
+        }
+        .card-moveis:hover .texto-fora {
+            bottom: -10%;
+        }
+        .for-all{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .for-all h1{
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .for-all div img {
+            width: 60px;
+        }
+        .area-for-all {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 2fr));
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .area-for-all div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+            width: 250px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1);
+        }
+        .area-for-all div h3,p{
+            text-align: center;
+        }
+        .card-portfolio {
+            display: grid;
+            grid-template-columns: 340px 2fr;
+        }
+        .card-portfolio li img{
+            width: 340px;
+            height: 340px;
+            transition: transform 0.9s ease-in-out;
+            overflow: hidden; 
+        }
+        .card-portfolio li img:hover{
+            transform: scale(1.05);
+        }
+        .portfolio div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolio h1{
+            font-size: 35px;
+            text-align: center;
+            width: 700px;
+        } 
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     .hero-area .carousel-inner .carousel-caption h2 {
@@ -591,7 +931,334 @@ button:focus {
     .hero-area .carousel-inner .carousel-caption h3 {
         font-size: 36px
     }
+    .area-portfolio{
+        display: flex;
+        align-items: center;
+        margin: 10px;
+        justify-content: center;
+    }
+    .card-moveis{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        background-image: url('/img//interior.jpg');
+        padding: 10px;
+        border-top-left-radius: 90px;
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-ambiente h1, h3, p{
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+    }
+    .card-moveis, h1, h3, p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    
+    
+    .card-ambiente{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/img/corporativo.jpg');
+        padding: 30px;
+        border-bottom-right-radius: 90px;
+        width: 400px;
+        height: 400px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-portfolio img{
+        width: 400px;
+    }
+    
+    .texto-fora {
+        background-color: #222;
+        position: absolute;
+        bottom: 0;
+        width: 300px;
+        text-align: center;
+        transition: bottom 0.5s ease-in-out; 
+        border-radius: 10px;
+    }
+    .card-ambiente:hover .texto-fora {
+        bottom: -10%;
+    }
+    .card-moveis:hover .texto-fora {
+        bottom: -10%;
+    }
+    .area-conheca{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 80px;
+        align-items: center;
+    }
+    .area-conheca h1{
+        width: 700px;
+        font-size: 25px;
+        font-family: "Open Sans", sans-serif;
+        color: #ffee5c;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    .titulo-fino{
+        font-weight: 300;
+    }
+    .area-conheca h4{
+        font-weight: 300;
+        text-align: center;
+        margin: 10px;
+        width: 800px;
+    }
+    .for-all{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .for-all h1{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .for-all div img {
+        width: 80px;
+    }
+    
+    .area-for-all {
+        display: flex;
+        justify-content: center;
+    }
+    .area-for-all div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        width: 250px;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1);
+    }
+    .area-for-all div h3,p{
+        text-align: center;
+    }
+    .about div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .about div p{
+        text-align: justify;
+        width: 800px;
+    }
+    .about div h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .card-portfolio {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
+    .card-portfolio li img{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        transition: transform 0.9s ease-in-out;
+        overflow: hidden;
+    }
+    .card-portfolio li img:hover{
+        transform: scale(1.05);
+    }
+    .portfolio div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio h1{
+        font-size: 35px;
+        text-align: center;
+        width: 700px;
+    }
+    #contact{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-all{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* define o tamanho das colunas */
+        grid-gap: 10px; /* espaçamento entre os itens */
+        padding: 20px;
+        transition: all 0.6s ;
+    }
+    .card-all h3{
+        color: #ffee5c;
+    }
+    .card-all:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.4);
+    }
+        .area-conheca{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .area-conheca .titulo{
+            margin-top: 25px;
+            width: 500px;
+        }
+        .area-conheca h1{
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .titulo-fino{
+            font-weight: 300;
+        }
+        .area-conheca h4{
+            font-weight: 300;
+            text-align: center;
+            margin: 10px;
+            width: 500px;
+        }
+        .area-portfolio{
+            display: flex;
+            align-items: center;
+            margin: 30px;
+            justify-content: center;
+        }
+        .card-moveis{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/img//interior.jpg');
+            padding: 10px;
+            border-top-left-radius: 90px;
+            width: 350px;
+            height: 350px;
+            margin: 2px;
+            background-size: cover;
+        }
+        .card-ambiente h1, h3, p{
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 3px;
+        }
+        .card-moveis, h1, h3, p {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .card-ambiente{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('/img/corporativo.jpg');
+            padding: 10px;
+            border-bottom-right-radius: 90px;
+            width: 350px;
+            height: 350px;
+            margin: 10px;
+            background-size: cover;
+        }
+
+        .texto-fora {
+            display: none;
+            background-color: #222;
+            position: absolute;
+            bottom: 0;
+            width: 300px;
+            text-align: center;
+            transition: bottom 0.5s ease-in-out; 
+            border-radius: 10px;
+        }
+        .card-ambiente:hover .texto-fora {
+            bottom: -10%;
+        }
+        .card-moveis:hover .texto-fora {
+            bottom: -10%;
+        }
+        .for-all{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .for-all h1{
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .for-all div img {
+            width: 60px;
+        }
+        .area-for-all {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 2fr));
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .area-for-all div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+            width: 250px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1);
+        }
+        .area-for-all div h3,p{
+            text-align: center;
+        }
+        .card-portfolio {
+            display: grid;
+            grid-template-columns: 340px 2fr;
+        }
+        .card-portfolio li img{
+            width: 340px;
+            height: 340px;
+            transition: transform 0.9s ease-in-out;
+            overflow: hidden; 
+        }
+        .card-portfolio li img:hover{
+            transform: scale(1.05);
+        }
+        .portfolio div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolio h1{
+            font-size: 35px;
+            text-align: center;
+            width: 700px;
+        }
 }
+
 
 @media only screen and (max-width: 767px) {
     .hero-area .carousel-inner .carousel-caption h2 {
@@ -607,171 +1274,695 @@ button:focus {
     }
 }
 
-@media only screen and (max-width: 500px) {
-    .hero-area .carousel-inner .carousel-caption {
-        top: 35%
+
+
+
+
+
+
+
+
+@media screen and (max-width: 400px) {
+        .area-conheca{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .area-conheca .titulo{
+            margin-top: 25px;
+            width: 500px;
+        }
+        .area-conheca h1{
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .titulo-fino{
+            font-weight: 300;
+        }
+        .area-conheca h4{
+            font-weight: 300;
+            text-align: center;
+            margin: 10px;
+        }
+
+        .card-moveis{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/img//interior.jpg');
+            padding: 10px;
+            border-top-left-radius: 90px;
+            border-bottom-right-radius: 10px;
+            width: 350px;
+            height: 250px;
+            margin: 2px;
+            background-size: cover;
+        }
+        .card-ambiente{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('/img/corporativo.jpg');
+            padding: 10px;
+            border-bottom-right-radius: 90px;
+            width: 350px;
+            height: 250px;
+            margin: 10px;
+            background-size: cover;
+        }
+        .texto-fora {
+            display: none;
+            text-align: center;
+            transition: bottom 0.5s ease-in-out; 
+            border-radius: 10px;
+        }
+        .card-ambiente h1, h3, p{
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 3px;
+        }
+        .card-moveis, h1, h3, p {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .card-portfolio img{
+            width: 400px;
+        }
+        .card-ambiente:hover .texto-fora {
+            bottom: -10%;
+        }
+        .card-moveis:hover .texto-fora {
+            bottom: -10%;
+        }
+        .for-all{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .for-all h1{
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .for-all div img {
+            width: 40px;
+        }
+        .area-for-all {
+            display: grid;
+            grid-template-columns: repeat(1, minmax(130px, 1fr));
+            gap: 5px;
+            padding: 5px;
+        }
+        .area-for-all div h3,p{
+            text-align: center;
+        }
+        .card-portfolio {
+            display: flex;
+            flex-direction: column;
+        }
+        .card-portfolio li img{
+            width: 350px;
+            height: 350px;
+            padding: 10px;
+            transition: transform 0.9s ease-in-out;
+            overflow: hidden; 
+        }
+        .card-portfolio li img:hover{
+            transform: scale(1.05);
+        }
+        .portfolio div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolio h1{
+            font-size: 20px;
+            text-align: center;
+            width: 360px;
+        }
+        .card-all{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 2px;
+            transition: all 0.6s ;  
+            box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.2);
+            margin: 10px;
+            padding: 30px;
+        }
+        .card-all h3{
+            color: #ffee5c;
+        }
+        .card-all:hover{
+            transform: translateY(-8px);
+            box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.4);
+        }
+        #contact{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        #contact ul li {
+            background-color: #222;
+            margin: 10px;
+            padding: 2px;
+            padding-left: 20px;
+            padding-right: 20px;
+            border-radius: 4px;
+        }
+@media screen and (min-width: 991px){
+    .hero-area .carousel-inner .carousel-caption h2 {
+        font-size: 55px
     }
-}
 
-.area-portfolio{
-    display: flex;
-    align-items: center;
-    margin: 30px;
-    justify-content: center;
-}
+    .hero-area .carousel-inner .carousel-caption h3 {
+        font-size: 36px
+    }
 
-.card-moveis{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    justify-content: flex-end;
-    background-image: url('/img//interior.jpg');
-    padding: 30px;
-    border-top-left-radius: 90px;
-    width: 500px;
-    height: 500px;
-    margin: 10px;
-    background-size: cover;
-}
-.card-ambiente h1, h3, p{
-   
-    padding-left: 5px;
-    padding-right: 5px;
-    border-radius: 3px;
-}
-.card-moveis, h1, h3, p {
-    padding-left: 5px;
-    padding-right: 5px;
-}
-
-.card-ambiente{
+    .card-moveis{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        background-image: url('/img//interior.jpg');
+        padding: 30px;
+        border-top-left-radius: 90px;
+        width: 500px;
+        height: 500px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-ambiente h1, h3, p{
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+    }
+    .card-moveis, h1, h3, p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
     
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-image: url('/img/corporativo.jpg');
-    padding: 30px;
-    border-bottom-right-radius: 90px;
-    width: 500px;
-    height: 500px;
-    margin: 10px;
-    background-size: cover;
-}
-.card-portfolio img{
-    width: 400px;
-}
-.area-conheca{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 80px;
-    align-items: center;
-}
-.area-conheca .titulo{
-    margin-top: 30px;
-}
-.area-conheca h1{
-    font-size: 35px;
-    font-family: "Open Sans", sans-serif;
-    color: #fff;
-    font-weight: 700;
-    line-height: 1.5;
-    text-align: center;
     
+    .card-ambiente{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/img/corporativo.jpg');
+        padding: 30px;
+        border-bottom-right-radius: 90px;
+        width: 500px;
+        height: 500px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-portfolio img{
+        width: 400px;
+    }
+    
+    .texto-fora {
+        background-color: #222;
+        position: absolute;
+        bottom: 0;
+        width: 400px;
+        text-align: center;
+        transition: bottom 0.5s ease-in-out; 
+        border-radius: 10px;
+    }
+    .card-ambiente:hover .texto-fora {
+        bottom: -10%;
+    }
+    .card-moveis:hover .texto-fora {
+        bottom: -10%;
+    }
+    .area-conheca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .area-conheca .titulo{
+        margin-top: 25px;
+        width: 400px;
+    }
+    .area-conheca h1{
+        font-size: 25px;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        
+    }
+    .titulo-fino{
+        font-weight: 300;
+    }
+    .area-conheca h4{
+        font-weight: 300;
+        text-align: center;
+        margin: 10px;
+        width: 800px;
+    }
+    .for-all{
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .for-all h1{
+        font-size: 35px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .for-all div img {
+        width: 80px;
+    }
+    
+    .area-for-all {
+        display: flex;
+        justify-content: center;
+    }
+    .area-for-all div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        width: 250px;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1);
+    }
+    .area-for-all div h3,p{
+        text-align: center;
+    }
+    .about div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .about div p{
+        text-align: justify;
+        width: 800px;
+    }
+    .about div h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .card-portfolio {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
+    .card-portfolio li img{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        transition: transform 0.9s ease-in-out;
+        overflow: hidden;
+    }
+    .card-portfolio li img:hover{
+        transform: scale(1.05);
+    }
+    .portfolio div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio h1{
+        font-size: 35px;
+        text-align: center;
+        width: 700px;
+    }
+    #contact{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .card-all{
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr; /* define o tamanho das colunas */
+        grid-gap: 10px; /* espaçamento entre os itens */
+        padding: 20px;
+        transition: all 0.6s ; 
+    }
+    .card-all:hover{
+        transform: translateY(-8px);
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.4);
+    }
+        .area-conheca{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        .area-conheca .titulo{
+            margin-top: 25px;
+            width: 500px;
+        }
+        .area-conheca h1{
+            font-size: 25px;
+            font-family: "Open Sans", sans-serif;
+            color: #fff;
+            font-weight: 700;
+            line-height: 1.5;
+            text-align: center;
+        }
+        .titulo-fino{
+            font-weight: 300;
+        }
+        .area-conheca h4{
+            font-weight: 300;
+            text-align: center;
+            margin: 10px;
+            width: 500px;
+        }
+        .card-moveis{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('/img//interior.jpg');
+            padding: 10px;
+            border-top-left-radius: 90px;
+            width: 500px;
+            height: 500px;
+            margin: 2px;
+            background-size: cover;
+        }
+        .card-ambiente h1, h3, p{
+            padding-left: 5px;
+            padding-right: 5px;
+            border-radius: 3px;
+        }
+        .card-moveis, h1, h3, p {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+        .card-ambiente{
+            display: flex;
+            align-items: center;
+            background-image: url('/img/corporativo.jpg');
+            padding: 10px;
+            border-bottom-right-radius: 90px;
+            width: 500px;
+            height: 500px;
+            margin: 10px;
+            background-size: cover;
+        }
+        .card-portfolio img{
+            width: 400px;
+        }
+        .texto-fora {
+            background-color: #222;
+            box-shadow: rgba(241, 219, 19, 0.5);
+            position: absolute;
+            bottom: 0;
+            width: 400px;
+            text-align: center;
+            transition: bottom 0.5s ease-in-out; 
+            border-radius: 10px;
+        }
+        .card-ambiente:hover .texto-fora {
+            bottom: -10%;
+        }
+        .card-moveis:hover .texto-fora {
+            bottom: -10%;
+        }
+        .for-all{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .for-all h1{
+            font-size: 25px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .for-all div img {
+            width: 60px;
+        }
+        .area-for-all {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(250px, 2fr));
+            gap: 20px;
+            padding: 20px;
+            align-items: center;
+            justify-content: center;
+        }
+        .area-for-all div {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            margin: 10px;
+            width: 250px;
+            background-color: #222;
+            border-radius: 10px;
+            box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1);
+        }
+        .area-for-all div h3,p{
+            text-align: center;
+        }
+        .card-portfolio {
+            display: grid;
+            grid-template-columns: 250px 1fr;
+        }
+        .card-portfolio li img{
+            width: 250px;
+            height: 250px;
+            padding: 10px;
+            transition: transform 0.9s ease-in-out;
+            overflow: hidden;
+        }
+        .card-portfolio li img:hover{
+            transform: scale(1.05);
+        }
+        .portfolio div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        .portfolio h1{
+            font-size: 35px;
+            text-align: center;
+            width: 700px;
+        }
+        .banner-contact{
+            margin-top: 40px;
+            width: 400px;
+          }
 }
-.titulo-fino{
-    font-weight: 300;
 }
-.area-conheca h4{
-    font-weight: 300;
-    text-align: center;
-    margin: 10px;
-    width: 700px;
-}
-.texto-fora {
-    background-color: #222;
-    box-shadow: rgba(241, 219, 19, 0.5);
-    position: absolute;
-    bottom: 0;
-    width: 400px;
-    text-align: center;
-    transition: bottom 0.5s ease-in-out; /* Adicionando uma transição suave */
-}
-.card-ambiente:hover .texto-fora {
-    bottom: -10%;
-}
-.card-moveis:hover .texto-fora {
-    bottom: -10%;
-}
-.for-all{
-    display: flex;
-    flex-direction: column;
-}
-.for-all h1{
-    font-size: 35px;
-    text-align: center;
-}
-.for-all div img {
-    width: 80px;
-}
-.card-area {
 
-}
-.area-for-all {
-    display: flex;
-    justify-content: center;
-}
-.area-for-all div {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    margin: 10px;
-    width: 250px;
-    background-color: #222;
-    border-radius: 10px;
-}
-.area-for-all div h3,p{
-    text-align: center;
-}
-.about{
+@media screen and (min-width: 915px) {
+    .area-conheca{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .area-conheca h1{
+        margin-top: 40px;
+        font-size: 40px;
+        font-family: "Open Sans", sans-serif;
+        color: #fff;
+        font-weight: 700;
+        line-height: 1.5;
+        text-align: center;
+        width: 1000px;
+        
+    }
+    .titulo-fino{
+        font-weight: 300;
+    }
+    .area-conheca h4{
+        font-weight: 300;
+        text-align: center;
+        margin: 10px;
+        width: 1000px;
+    }
+    .area-portfolio{
+        display: flex;
+        align-items: center;
+        margin: 30px;
+        justify-content: center;
+    }
+    
+    .card-moveis{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: flex-end;
+        background-image: url('/img//interior.jpg');
+        padding: 30px;
+        border-top-left-radius: 90px;
+        width: 600px;
+        height: 600px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-ambiente h1, h3, p{
+       
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 3px;
+    }
+    .card-moveis, h1, h3, p {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .card-ambiente{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url('/img/corporativo.jpg');
+        padding: 30px;
+        border-bottom-right-radius: 90px;
+        width: 600px;
+        height: 600px;
+        margin: 10px;
+        background-size: cover;
+    }
+    .card-portfolio img{
+        width: 600px;
+    }
+    .texto-fora h3{
+        color: #ffee5c;
+    }
 
-}
-.about div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 30px;
-}
-.about div p{
-    text-align: justify;
-    width: 800px;
-}
-.about div h1{
-    font-size: 35px;
-    text-align: center;
-}
-.card-portfolio {
-    display: grid;
-    grid-template-columns: 400px 1fr;
-}
-.card-portfolio li img{
-    width: 400px;
-    height: 400px;
-    padding: 10px;
-    transition: transform 0.9s ease-in-out;
-    overflow: hidden; 
-}
-.card-portfolio li img:hover{
-    transform: scale(1.05);
-}
-.portfolio div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.portfolio h1{
-    font-size: 35px;
-    text-align: center;
+    .texto-fora {
+        background-color: #222;
+        box-shadow: 2px 2px 5px rgba(230, 215, 6, 0.836);
+        position: absolute;
+        bottom: 0;
+        width: 400px;
+        text-align: center;
+        transition: bottom 0.5s ease-in-out; /* Adicionando uma transição suave */
+    }
+    .card-ambiente:hover .texto-fora {
+        bottom: -10%;
+    }
+    .card-moveis:hover .texto-fora {
+        bottom: -10%;
+    }
+    .for-all{
+        display: flex;
+        flex-direction: column;
+    }
+    .for-all h1{
+        margin-top: 100px;
+        font-size: 35px;
+        text-align: center;
+    }
+    .for-all div img {
+        width: 80px;
+    }
+    .card-area {
+    
+    }
+    .area-for-all {
+        display: flex;
+        justify-content: center;
+    }
+    .area-for-all h3 {
+        color: #ffee5c;
+    }
+    .area-for-all div {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        padding: 30px;
+        width: 250px;
+        background-color: #222;
+        border-radius: 10px;
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.1); 
+        transition: all 0.5s;
+    }
+    .area-for-all div:hover{
+        box-shadow: 0 -2px 5px rgba(206, 203, 9, 0.9); 
+        transform: translateY(-8px);
+    }
+    .area-for-all div h3,p{
+        text-align: center;
+    }
+
+    .about{
+    
+    }
+    .about div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px;
+    }
+    .about div p{
+        text-align: justify;
+        width: 800px;
+    }
+    .about div h1{
+        font-size: 35px;
+        text-align: center;
+    }
+    .card-portfolio {
+        display: grid;
+        grid-template-columns: 400px 1fr;
+    }
+    .card-portfolio li img{
+        width: 400px;
+        height: 400px;
+        padding: 10px;
+        transition: transform 0.9s ease-in-out;
+        overflow: hidden; 
+    }
+    .card-portfolio li img:hover{
+        transform: scale(1.05);
+    }
+    .portfolio div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .portfolio h1{
+        font-size: 35px;
+        text-align: center;
+        width: 1000px;
+    }
+    #contact{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    #contact ul li {
+        background-color: #222;
+        margin: 10px;
+        padding: 2px;
+        padding-left: 20px;
+        padding-right: 20px;
+        border-radius: 4px;
+  }
+  #contact div{
+    margin-top: 10px;
+  }
+  .banner-contact{
     width: 700px;
+  }
 }
