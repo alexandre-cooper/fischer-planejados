@@ -1283,6 +1283,9 @@ button:focus {
 
 
 @media screen and (max-width: 400px) {
+    .logo{
+        width: 120px;
+      }
         .area-conheca{
             display: flex;
             flex-direction: column;
@@ -1964,5 +1967,8 @@ button:focus {
   }
   .banner-contact{
     width: 700px;
+  }
+  .logo{
+    width: 150px;
   }
 }
