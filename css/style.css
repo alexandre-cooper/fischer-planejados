@@ -1443,6 +1443,24 @@ button:focus {
             padding-right: 20px;
             border-radius: 4px;
         }
+        .video{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+          }
+          .video h1{
+            color: #ffee5c;
+            padding: 5px;
+            font-size: 35px;
+          }
+          .video div{
+            background-color: #ffee5c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
 @media screen and (min-width: 991px){
     .hero-area .carousel-inner .carousel-caption h2 {
         font-size: 55px
@@ -1767,7 +1785,23 @@ button:focus {
         }
         .banner-contact{
             margin-top: 40px;
-            width: 400px;
+            width: 300px;
+          }
+          .video{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+          }
+          .video h1{
+            color: #ffee5c;
+          }
+          .video div{
+            background-color: #ffee5c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
 }
 }
@@ -1966,9 +2000,25 @@ button:focus {
     margin-top: 10px;
   }
   .banner-contact{
-    width: 700px;
+    width: 500px;
   }
   .logo{
     width: 150px;
+  }
+  .video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .video h1{
+    color: #ffee5c;
+  }
+  .video div{
+    background-color: #ffee5c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
